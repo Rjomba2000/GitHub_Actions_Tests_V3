@@ -5,4 +5,4 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 add_test([=[FirstTest]=] "tests.exe")
-set_tests_properties([=[FirstTest]=] PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/egosh/Desktop/ck/github_actions_v3/CMakeLists.txt;10;add_test;C:/Users/egosh/Desktop/ck/github_actions_v3/CMakeLists.txt;0;")
+set_tests_properties([=[FirstTest]=] PROPERTIES  FAIL_REGULAR_EXPRESSION "Tree works incorrectly" PASS_REGULAR_EXPRESSION "Tree works correctly" _BACKTRACE_TRIPLES "C:/Users/egosh/Desktop/ck/github_actions_v3/CMakeLists.txt;9;add_test;C:/Users/egosh/Desktop/ck/github_actions_v3/CMakeLists.txt;0;")
