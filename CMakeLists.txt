@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 enable_testing()
 
-add_executable(tests tests/test.cpp tests/catch.hpp)
+add_executable(tests.exe tests/test.cpp tests/catch.hpp)
 
-add_test(FirstTest tests)
+add_test(FirstTest tests.exe)
 
-add_executable(mainFunc src/main.cpp)
+add_executable(mainFunc.exe src/main.cpp)

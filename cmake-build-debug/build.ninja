@@ -41,70 +41,81 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target tests
+# Object build statements for EXECUTABLE target tests.exe
 
 
 #############################################
-# Order-only phony target for tests
+# Order-only phony target for tests.exe
 
-build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
+build cmake_object_order_depends_target_tests.exe: phony || CMakeFiles/tests.exe.dir
 
-build CMakeFiles/tests.dir/tests/test.cpp.obj: CXX_COMPILER__tests_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/tests/test.cpp || cmake_object_order_depends_target_tests
-  DEP_FILE = CMakeFiles\tests.dir\tests\test.cpp.obj.d
+build CMakeFiles/tests.exe.dir/tests/test.cpp.obj: CXX_COMPILER__tests.2eexe_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/tests/test.cpp || cmake_object_order_depends_target_tests.exe
+  DEP_FILE = CMakeFiles\tests.exe.dir\tests\test.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\tests.dir
-  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
+  OBJECT_DIR = CMakeFiles\tests.exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.exe.dir\tests
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tests
+# Link build statements for EXECUTABLE target tests.exe
 
 
 #############################################
-# Link the executable tests.exe
+# Link the executable tests.exe.exe
 
-build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test.cpp.obj
+build tests.exe.exe: CXX_EXECUTABLE_LINKER__tests.2eexe_Debug CMakeFiles/tests.exe.dir/tests/test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_DIR = CMakeFiles\tests.exe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = tests.exe
-  TARGET_IMPLIB = libtests.dll.a
-  TARGET_PDB = tests.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target mainFunc
+  TARGET_FILE = tests.exe.exe
+  TARGET_IMPLIB = libtests.exe.dll.a
+  TARGET_PDB = tests.exe.exe.dbg
 
 
 #############################################
-# Order-only phony target for mainFunc
+# Utility command for edit_cache
 
-build cmake_object_order_depends_target_mainFunc: phony || CMakeFiles/mainFunc.dir
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\egosh\Desktop\ck\github_actions_v3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-build CMakeFiles/mainFunc.dir/src/main.cpp.obj: CXX_COMPILER__mainFunc_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/src/main.cpp || cmake_object_order_depends_target_mainFunc
-  DEP_FILE = CMakeFiles\mainFunc.dir\src\main.cpp.obj.d
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target mainFunc.exe
+
+
+#############################################
+# Order-only phony target for mainFunc.exe
+
+build cmake_object_order_depends_target_mainFunc.exe: phony || CMakeFiles/mainFunc.exe.dir
+
+build CMakeFiles/mainFunc.exe.dir/src/main.cpp.obj: CXX_COMPILER__mainFunc.2eexe_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/src/main.cpp || cmake_object_order_depends_target_mainFunc.exe
+  DEP_FILE = CMakeFiles\mainFunc.exe.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\mainFunc.dir
-  OBJECT_FILE_DIR = CMakeFiles\mainFunc.dir\src
+  OBJECT_DIR = CMakeFiles\mainFunc.exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainFunc.exe.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mainFunc
+# Link build statements for EXECUTABLE target mainFunc.exe
 
 
 #############################################
-# Link the executable mainFunc.exe
+# Link the executable mainFunc.exe.exe
 
-build mainFunc.exe: CXX_EXECUTABLE_LINKER__mainFunc_Debug CMakeFiles/mainFunc.dir/src/main.cpp.obj
+build mainFunc.exe.exe: CXX_EXECUTABLE_LINKER__mainFunc.2eexe_Debug CMakeFiles/mainFunc.exe.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\mainFunc.dir
+  OBJECT_DIR = CMakeFiles\mainFunc.exe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = mainFunc.exe
-  TARGET_IMPLIB = libmainFunc.dll.a
-  TARGET_PDB = mainFunc.exe.dbg
+  TARGET_FILE = mainFunc.exe.exe
+  TARGET_IMPLIB = libmainFunc.exe.dll.a
+  TARGET_PDB = mainFunc.exe.exe.dbg
 
 
 #############################################
@@ -130,23 +141,12 @@ build CMakeFiles/test.util: CUSTOM_COMMAND
 
 build test: phony CMakeFiles/test.util
 
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\egosh\Desktop\ck\github_actions_v3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles/edit_cache.util
-
 # =============================================================================
 # Target aliases.
 
-build mainFunc: phony mainFunc.exe
+build mainFunc.exe: phony mainFunc.exe.exe
 
-build tests: phony tests.exe
+build tests.exe: phony tests.exe.exe
 
 # =============================================================================
 # Folder targets.
@@ -156,7 +156,7 @@ build tests: phony tests.exe
 #############################################
 # Folder: C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug
 
-build all: phony tests.exe mainFunc.exe
+build all: phony tests.exe.exe mainFunc.exe.exe
 
 # =============================================================================
 # Built-in targets

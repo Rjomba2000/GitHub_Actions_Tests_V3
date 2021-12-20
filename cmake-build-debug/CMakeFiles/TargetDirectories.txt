@@ -1,5 +1,5 @@
-C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/tests.dir
-C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/mainFunc.dir
+C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/tests.exe.dir
+C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/mainFunc.exe.dir
 C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/test.dir
-C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/CMakeFiles/edit_cache.dir
