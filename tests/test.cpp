@@ -10,7 +10,7 @@ REQUIRE(tree.find(10));
 tree.insert(1);
 REQUIRE(tree.find(1));
 tree.insert(20);
-REQUIRE(tree.find(20));
+REQUIRE(!tree.find(20));
 }
 
 TEST_CASE("Remove works correctly") {
