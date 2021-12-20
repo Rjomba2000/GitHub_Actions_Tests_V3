@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "tests.exe"
+			"path" : "mainFunc.exe"
 		},
 		{
-			"path" : "tests.pdb"
+			"path" : "mainFunc.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "tests::@6890427a1f51a3e7e1df",
+	"id" : "mainFunc::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "tests",
-	"nameOnDisk" : "tests.exe",
+	"name" : "mainFunc",
+	"nameOnDisk" : "mainFunc.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,14 +94,6 @@
 			[
 				0
 			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1,
-				2
-			]
 		}
 	],
 	"sources" : 
@@ -109,18 +101,8 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/test.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/MyBinaryTree.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "tests/catch.hpp",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
