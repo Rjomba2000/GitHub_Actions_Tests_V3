@@ -30,4 +30,4 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}}
           
     - name: list folder2
-      run: ls build/makeFunc
+      run: ls build/tests
