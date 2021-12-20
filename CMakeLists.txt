@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.21)
+project(github_actions_v3)
+
+set(CMAKE_CXX_STANDARD 14)
+
+enable_testing()
+
+add_executable(tests tests/test.cpp src/MyBinaryTree.h tests/catch.hpp)
+add_executable(mainFunc src/main.cpp)

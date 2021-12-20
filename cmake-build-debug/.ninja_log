@@ -1,0 +1,7 @@
+# ninja log v5
+0	1356	6617256917002249	CMakeFiles/github_actions_v3.dir/src/main.cpp.obj	682898cbe4ff68e9
+373	487	6617257862643795	main.exe	5d0b32d4679aa73a
+1	266	6617289950283119	build.ninja	3e1dc7c6585e16d0
+0	370	6617257861454878	CMakeFiles/main.dir/src/main.cpp.obj	d6207ed0ca2c2e3d
+0	12158	6617261958692792	CMakeFiles/tests.dir/tests/test.cpp.obj	8a418d2da415197
+12164	39237	6617262229634224	tests.exe	ec33b6c60d581eee
