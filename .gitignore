@@ -1,1 +1,1 @@
-*.exe
+cmake-build-debug/*.exe
