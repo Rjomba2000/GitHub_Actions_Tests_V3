@@ -11,13 +11,10 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: List start folder
-      run: ls -la
     
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
@@ -28,13 +25,10 @@ jobs:
     - name: Test
       working-directory: ${{github.workspace}}/build
       run: ctest -C ${{env.BUILD_TYPE}}
-          
-    - name: List build folder
-      run: ls build
       
     - name: 'Upload Artifact'   
       uses: actions/upload-artifact@v2
       with:
         name: result_executable
-        path: build/tests.exe
+        path: build/mainFunc.exe
         retention-days: 5
