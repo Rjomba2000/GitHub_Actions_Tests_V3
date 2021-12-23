@@ -36,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: build/main.exe
+        path: build/mainFunc.exe
         retention-days: 5
