@@ -73,49 +73,38 @@ build tests.exe.exe: CXX_EXECUTABLE_LINKER__tests.2eexe_Debug CMakeFiles/tests.e
   TARGET_IMPLIB = libtests.exe.dll.a
   TARGET_PDB = tests.exe.exe.dbg
 
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\egosh\Desktop\ck\github_actions_v3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles/edit_cache.util
-
 # =============================================================================
-# Object build statements for EXECUTABLE target mainFunc.exe
+# Object build statements for EXECUTABLE target mainFunc
 
 
 #############################################
-# Order-only phony target for mainFunc.exe
+# Order-only phony target for mainFunc
 
-build cmake_object_order_depends_target_mainFunc.exe: phony || CMakeFiles/mainFunc.exe.dir
+build cmake_object_order_depends_target_mainFunc: phony || CMakeFiles/mainFunc.dir
 
-build CMakeFiles/mainFunc.exe.dir/src/main.cpp.obj: CXX_COMPILER__mainFunc.2eexe_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/src/main.cpp || cmake_object_order_depends_target_mainFunc.exe
-  DEP_FILE = CMakeFiles\mainFunc.exe.dir\src\main.cpp.obj.d
+build CMakeFiles/mainFunc.dir/src/main.cpp.obj: CXX_COMPILER__mainFunc_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/src/main.cpp || cmake_object_order_depends_target_mainFunc
+  DEP_FILE = CMakeFiles\mainFunc.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\mainFunc.exe.dir
-  OBJECT_FILE_DIR = CMakeFiles\mainFunc.exe.dir\src
+  OBJECT_DIR = CMakeFiles\mainFunc.dir
+  OBJECT_FILE_DIR = CMakeFiles\mainFunc.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mainFunc.exe
+# Link build statements for EXECUTABLE target mainFunc
 
 
 #############################################
-# Link the executable mainFunc.exe.exe
+# Link the executable mainFunc.exe
 
-build mainFunc.exe.exe: CXX_EXECUTABLE_LINKER__mainFunc.2eexe_Debug CMakeFiles/mainFunc.exe.dir/src/main.cpp.obj
+build mainFunc.exe: CXX_EXECUTABLE_LINKER__mainFunc_Debug CMakeFiles/mainFunc.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\mainFunc.exe.dir
+  OBJECT_DIR = CMakeFiles\mainFunc.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = mainFunc.exe.exe
-  TARGET_IMPLIB = libmainFunc.exe.dll.a
-  TARGET_PDB = mainFunc.exe.exe.dbg
+  TARGET_FILE = mainFunc.exe
+  TARGET_IMPLIB = libmainFunc.dll.a
+  TARGET_PDB = mainFunc.exe.dbg
 
 
 #############################################
@@ -141,10 +130,21 @@ build CMakeFiles/test.util: CUSTOM_COMMAND
 
 build test: phony CMakeFiles/test.util
 
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\egosh\Desktop\ck\github_actions_v3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
 # =============================================================================
 # Target aliases.
 
-build mainFunc.exe: phony mainFunc.exe.exe
+build mainFunc: phony mainFunc.exe
 
 build tests.exe: phony tests.exe.exe
 
@@ -156,7 +156,7 @@ build tests.exe: phony tests.exe.exe
 #############################################
 # Folder: C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug
 
-build all: phony tests.exe.exe mainFunc.exe.exe
+build all: phony tests.exe.exe mainFunc.exe
 
 # =============================================================================
 # Built-in targets
