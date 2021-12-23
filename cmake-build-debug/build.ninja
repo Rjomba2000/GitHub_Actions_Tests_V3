@@ -41,37 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target tests.exe
+# Object build statements for EXECUTABLE target tests
 
 
 #############################################
-# Order-only phony target for tests.exe
+# Order-only phony target for tests
 
-build cmake_object_order_depends_target_tests.exe: phony || CMakeFiles/tests.exe.dir
+build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
 
-build CMakeFiles/tests.exe.dir/tests/test.cpp.obj: CXX_COMPILER__tests.2eexe_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/tests/test.cpp || cmake_object_order_depends_target_tests.exe
-  DEP_FILE = CMakeFiles\tests.exe.dir\tests\test.cpp.obj.d
+build CMakeFiles/tests.dir/tests/test.cpp.obj: CXX_COMPILER__tests_Debug C$:/Users/egosh/Desktop/ck/github_actions_v3/tests/test.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles\tests.dir\tests\test.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\tests.exe.dir
-  OBJECT_FILE_DIR = CMakeFiles\tests.exe.dir\tests
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tests.exe
+# Link build statements for EXECUTABLE target tests
 
 
 #############################################
-# Link the executable tests.exe.exe
+# Link the executable tests.exe
 
-build tests.exe.exe: CXX_EXECUTABLE_LINKER__tests.2eexe_Debug CMakeFiles/tests.exe.dir/tests/test.cpp.obj
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\tests.exe.dir
+  OBJECT_DIR = CMakeFiles\tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = tests.exe.exe
-  TARGET_IMPLIB = libtests.exe.dll.a
-  TARGET_PDB = tests.exe.exe.dbg
+  TARGET_FILE = tests.exe
+  TARGET_IMPLIB = libtests.dll.a
+  TARGET_PDB = tests.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target mainFunc
@@ -146,7 +146,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build mainFunc: phony mainFunc.exe
 
-build tests.exe: phony tests.exe.exe
+build tests: phony tests.exe
 
 # =============================================================================
 # Folder targets.
@@ -156,7 +156,7 @@ build tests.exe: phony tests.exe.exe
 #############################################
 # Folder: C:/Users/egosh/Desktop/ck/github_actions_v3/cmake-build-debug
 
-build all: phony tests.exe.exe mainFunc.exe
+build all: phony tests.exe mainFunc.exe
 
 # =============================================================================
 # Built-in targets
