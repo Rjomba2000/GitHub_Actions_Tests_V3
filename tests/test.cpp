@@ -8,7 +8,7 @@ MyBinaryTree<int> tree;
 tree.insert(10);
 REQUIRE(tree.find(10));
 tree.insert(1);
-REQUIRE(!tree.find(1));
+REQUIRE(tree.find(1));
 tree.insert(20);
 REQUIRE(tree.find(20));
 }
